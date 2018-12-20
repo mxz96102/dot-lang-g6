@@ -1,0 +1,18 @@
+{
+  "name": "dot-lang-g6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@antv/g6": "^2.2.3"
+  },
+  "dependencies": {
+    "graphlib-dot": "^0.6.2"
+  }
+}
