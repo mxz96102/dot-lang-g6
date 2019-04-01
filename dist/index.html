@@ -1,0 +1,29 @@
+<!DOCTYPE html><html> <head> <meta charset="UTF-8"> <title>Test</title> </head> <body> <div style="min-height:200px;width:100%"> <h2>G6 DOT Language Test</h2> <textarea style="min-height:150px;min-width:400px" id="str" placeholder="input DOT language">
+            digraph G {
+
+	subgraph cluster_0 {
+		style=filled;
+		color=lightgrey;
+		node [style=filled,color=white];
+		a0 -> a1 -> a2 -> a3;
+		label = "process #1";
+	}
+
+	subgraph cluster_1 {
+		node [style=filled];
+		b0 -> b1 -> b2 -> b3;
+		label = "process #2";
+		color=blue
+	}
+	start -> a0;
+	start -> b0;
+	b2 -> a3;
+	a3 -> a0;
+	a3 -> end;
+	b3 -> end;
+
+	start [shape=Mdiamond];
+	end [shape=Msquare];
+}
+
+        </textarea> <button id="draw">Draw</button> </div> <div id="root"></div> </body> <script src="/test.8aef7203.js"></script> </html>
