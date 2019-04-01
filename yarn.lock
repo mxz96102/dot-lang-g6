@@ -17,9 +17,10 @@
     "@antv/util" "~1.2.5"
     wolfy87-eventemitter "~5.1.0"
 
-"@antv/g6@^2.2.3":
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/@antv/g6/-/g6-2.2.3.tgz#689702b8ebc7d606a90fcbc77b111e67cdba67e5"
+"@antv/g6@^2.2.6":
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/@antv/g6/-/g6-2.2.6.tgz#dca9f9474ae5bd2cae23fd9ff97f774b496c59ad"
+  integrity sha512-xxuXYjxw7o97PRo94e3pXHbsdHYdd+oKzy20ig91F61Bb7ddlHZg0I6ReU+skfS83cffqozgS+eZ9GWAUkS9UQ==
   dependencies:
     "@antv/component" "~0.0.4"
     "@antv/g" "^3.3.0"
@@ -396,6 +397,7 @@ fecha@~2.3.3:
 graphlib-dot@^0.6.2:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/graphlib-dot/-/graphlib-dot-0.6.2.tgz#872e933d0bb349430cb813a2491943d1c5f1e952"
+  integrity sha1-hy6TPQuzSUMMuBOiSRlD0cXx6VI=
   dependencies:
     graphlib "^1.0.1"
     lodash "^2.4.1"

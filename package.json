@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@antv/g6": "^2.2.3"
+    "@antv/g6": "^2.2.6"
   },
   "dependencies": {
     "graphlib-dot": "^0.6.2"
