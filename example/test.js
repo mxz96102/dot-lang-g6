@@ -14,7 +14,7 @@ G6.registerNode('rect', {
   
   var graph = new G6.Graph({
     container: 'root',
-    fitView: 'autoZoom',
+    fitView: 'cc',
     height: window.innerHeight/2,
     defaultIntersectBox: 'rect',
     modes: {
@@ -25,7 +25,8 @@ G6.registerNode('rect', {
   graph.node({
     shape: 'rect',
     label: function label(model) {
-      return model.label || model.id;
+      let r = model.label || model.id || '';
+      return r.split(',').join('\n');
     },
   
     style: (e) => ({
@@ -45,13 +46,8 @@ G6.registerNode('rect', {
 window.graph = graph;  
 
 document.getElementById('draw').addEventListener('click', function () {
-    let str = document.getElementById('str').value
+    let str = document.getElementById('str').value;
     let data = p2g6(str);
-    let addShape = graph.getCanvas().addShape;
-
-    console.log(data);
-
-  console.log(graph);
 
     if(data) {
       G6.registerGroup('custom', {
@@ -76,6 +72,5 @@ document.getElementById('draw').addEventListener('click', function () {
       });
 
       graph.read(data);
-
     }
 });

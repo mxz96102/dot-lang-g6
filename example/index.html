@@ -10,31 +10,142 @@
     <div style="min-height: 200px;width: 100%">
         <h2>G6 DOT Language Test</h2>
         <textarea style="min-height: 150px;min-width: 400px" id="str" placeholder="input DOT language">
-            digraph G {
-
-	subgraph cluster_0 {
-		style=filled;
-		color=lightgrey;
-		node [style=filled,color=white];
-		a0 -> a1 -> a2 -> a3;
-		label = "process #1";
-	}
-
-	subgraph cluster_1 {
-		node [style=filled];
-		b0 -> b1 -> b2 -> b3;
-		label = "process #2";
-		color=blue
-	}
-	start -> a0;
-	start -> b0;
-	b2 -> a3;
-	a3 -> a0;
-	a3 -> end;
-	b3 -> end;
-
-	start [shape=Mdiamond];
-	end [shape=Msquare];
+digraph G {
+subgraph Source_0 {
+3
+14
+16
+17
+}
+subgraph Source_1 {
+1
+2
+4
+5
+6
+7
+8
+9
+10
+11
+19
+20
+22
+23
+24
+25
+26
+27
+31
+32
+34
+35
+37
+38
+42
+43
+45
+46
+48
+49
+53
+54
+56
+57
+59
+60
+61
+}
+1->4
+2->8
+3->14
+4->5
+5->6
+5->24
+6->7
+7->19
+8->9
+9->10
+9->26
+10->11
+11->19
+14->16
+16->17
+17->19
+17->31
+17->42
+17->53
+19->20
+20->22
+22->23
+23->59
+24->25
+24->37
+24->48
+25->31
+26->27
+26->38
+26->49
+27->31
+31->32
+32->34
+34->35
+35->59
+37->42
+38->42
+42->43
+43->45
+45->46
+46->59
+48->53
+49->53
+53->54
+54->56
+56->57
+57->59
+59->60
+60->61
+1[label="Source_1,parallelism: 32"]
+2[label="Source_2,parallelism: 32"]
+3[label="Source_3,parallelism: 1"]
+4[label="Operator_4,parallelism: 32"]
+5[label="Operator_5,parallelism: 32"]
+6[label="Operator_6,parallelism: 32"]
+7[label="Operator_7,parallelism: 32"]
+8[label="Operator_8,parallelism: 32"]
+9[label="Operator_9,parallelism: 32"]
+10[label="Operator_10,parallelism: 32"]
+11[label="Operator_11,parallelism: 32"]
+14[label="Operator_14,parallelism: 1"]
+16[label="Operator_16,parallelism: 1"]
+17[label="Operator_17,parallelism: 1"]
+19[label="Operator_19,parallelism: 32"]
+20[label="Operator_20,parallelism: 32"]
+22[label="Operator_22,parallelism: 32"]
+23[label="Operator_23,parallelism: 32"]
+24[label="Operator_24,parallelism: 32"]
+25[label="Operator_25,parallelism: 32"]
+26[label="Operator_26,parallelism: 32"]
+27[label="Operator_27,parallelism: 32"]
+31[label="Operator_31,parallelism: 32"]
+32[label="Operator_32,parallelism: 32"]
+34[label="Operator_34,parallelism: 32"]
+35[label="Operator_35,parallelism: 32"]
+37[label="Operator_37,parallelism: 32"]
+38[label="Operator_38,parallelism: 32"]
+42[label="Operator_42,parallelism: 32"]
+43[label="Operator_43,parallelism: 32"]
+45[label="Operator_45,parallelism: 32"]
+46[label="Operator_46,parallelism: 32"]
+48[label="Operator_48,parallelism: 32"]
+49[label="Operator_49,parallelism: 32"]
+53[label="Operator_53,parallelism: 32"]
+54[label="Operator_54,parallelism: 32"]
+56[label="Operator_56,parallelism: 32"]
+57[label="Operator_57,parallelism: 32"]
+59[label="Operator_59,parallelism: 32"]
+60[label="Operator_60,parallelism: 32"]
+61[label="Sink_61,parallelism: 32"]
 }
 
         </textarea>
